@@ -1,0 +1,28 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Caderno de Desenho ",
+    "price": 12
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/c1371ca9-0504-44d6-80db-cfd6c171d066
+
+###
+
+PUT http://localhost:4002/products/c1371ca9-0504-44d6-80db-cfd6c171d066
+content-type: application/json
+
+{
+    "name": "Carrinho",
+    "price": 15.00
+}
+
+###
+DELETE http://localhost:4002/products/c1371ca9-0504-44d6-80db-cfd6c171d066
